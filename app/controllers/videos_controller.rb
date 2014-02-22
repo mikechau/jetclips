@@ -1,5 +1,3 @@
-require 'actionpack/action_caching'
-
 class VideosController < ApplicationController
 
   before_filter :set_headers
