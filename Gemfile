@@ -36,5 +36,6 @@ group :doc do
 end
 
 gem 'figaro'
+gem 'memcachier'
 gem 'dalli'
 gem 'passenger'
