@@ -37,3 +37,4 @@ end
 
 gem 'figaro'
 gem 'dalli'
+gem 'passenger'
