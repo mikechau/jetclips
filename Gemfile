@@ -36,7 +36,9 @@ group :doc do
 end
 
 gem 'figaro'
+gem 'rack-cache', group: :production
 gem 'memcachier'
 gem 'dalli'
+gem 'kgio', group: :production
 gem 'passenger'
 gem 'actionpack-action_caching'
