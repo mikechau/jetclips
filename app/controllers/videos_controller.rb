@@ -6,7 +6,7 @@ class VideosController < ApplicationController
 
   def show
     @videos = FbVideo.new(params[:id])
-    render json: @videos.list, :layout => false, :content_type => "application/json"
+    render json: @videos.list
   end
 
 
