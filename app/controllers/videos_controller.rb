@@ -1,14 +1,15 @@
 class VideosController < ApplicationController
-
   before_filter :set_headers
 
-  caches_action :show, :cache_path => Proc.new { |c| c.params }, :expires_in => 1.hour
-
-  def show
-    @videos = FbVideo.new(params[:id])
-    render json: @videos.list
+  def index
+    videos = FbVideo::Collection.new(params[:id])
+    render json: videos.list
   end
 
+  def show
+    video = FbVideo::Item.new(params[:id])
+    render json: video.get
+  end
 
   private
     def set_headers
@@ -17,5 +18,4 @@ class VideosController < ApplicationController
       headers['Access-Control-Request-Method'] = '*'
       headers['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept, Authorization'
     end
-
 end

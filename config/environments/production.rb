@@ -90,5 +90,4 @@ JetclipApi::Application.configure do
     :entitystore  => client
   }
   config.static_cache_control = "public, max-age=2592000"
-  
 end

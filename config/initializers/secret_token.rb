@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-JetclipApi::Application.config.secret_key_base = '58c161280e6a10e9e93daf21bf8dc37f731555ce36e4fdb8c03bc30b41fc70a42757a7d5a3603c00e850b1e764814f6263433eda535dad4803c0302fabc95411'
+JetclipApi::Application.config.secret_key_base = ENV['SECRET_TOKEN']
