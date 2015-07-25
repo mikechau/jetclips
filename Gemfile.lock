@@ -64,8 +64,6 @@ GEM
       rake (>= 0.8.1)
     pg (0.18.2)
     rack (1.6.4)
-    rack-cache (1.2)
-      rack (>= 0.4)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.3)
@@ -123,7 +121,6 @@ DEPENDENCIES
   oj_mimic_json
   passenger
   pg
-  rack-cache
   rails (~> 4.1)
   rails_12factor
   sqlite3
