@@ -39,7 +39,7 @@ module FbVideo
   class Item
     def initialize(id)
       @id = id
-      @url = URI::encode("#{::FbVideo::BASE_URL}/#{id}?fields=message,created_time,id,source&#{::FbVideo::TOKEN}")
+      @url = URI::encode("#{::FbVideo::BASE_URL}/#{id}?fields=name,created_time,id,source&#{::FbVideo::TOKEN}")
     end
 
     def get
