@@ -16,3 +16,4 @@ gem 'passenger'
 gem 'oj'
 gem 'oj_mimic_json'
 gem 'mime-types', '~> 2.6', '>= 2.6.1', require: 'mime/types/columnar'
+gem 'pry', group: :development

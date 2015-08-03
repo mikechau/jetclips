@@ -46,7 +46,7 @@ module FbVideo
       Rails.cache.fetch("video/#{@id}", expires_in: 10.minutes) do
         response = open(@url).read
         json = JSON.parse(response)
-        json[:ts] = json.delete :created_time
+        json['ts'] = json.delete "created_time"
         json
       end
     end
